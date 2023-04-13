@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+}
+
+.wrapper {
+  max-width: 2560px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  min-height: 100vh;
+  position: sticky;
+  top: calc(-1 * var(--section-height, 100vh) + 100vh);
+}
+
+.section:odd {
+  background-color: #eee;
+}
+
+.section__image {
+  width: 100%;
+  height: auto;
+}
