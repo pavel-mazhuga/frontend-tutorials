@@ -52,14 +52,12 @@ textureLoader.load(
       uniform vec2 viewport;
       uniform float pixelSize;
       uniform sampler2D image;
-
       varying vec2 vUv;
 
       void main() {
         vec2 uv = vUv;
         vec2 dxy = pixelSize / viewport;
         vec2 coord = dxy * floor(uv / dxy);
-
         gl_FragColor = texture2D(image, coord);
       }
 
