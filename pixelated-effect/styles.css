@@ -1,0 +1,26 @@
+html {
+  font-family: sans-serif;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tip {
+  position: fixed;
+  color: #fff;
+  z-index: 1;
+  top: 40px;
+  left: 40px;
+}
+
+@media (max-width: 767px) {
+  .tip {
+    top: 20px;
+    left: 20px;
+  }
+}
